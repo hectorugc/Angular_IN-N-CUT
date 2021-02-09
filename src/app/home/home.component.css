@@ -1,0 +1,21 @@
+html,
+body {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.ppp {
+  padding-right: 4rem;
+}
+#collapsingNavbar {
+  padding-left: 2rem;
+}
+.container {
+  margin: 170px;
+}
+#more-text {
+  width: 60%;
+}

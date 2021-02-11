@@ -4,13 +4,14 @@ import {RouterModule,Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerService } from './shared/customer.service';
-
+import {environment} from "../environments/environment"
 
 const appRoutes: Routes=[
   {
@@ -40,6 +41,9 @@ const appRoutes: Routes=[
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],

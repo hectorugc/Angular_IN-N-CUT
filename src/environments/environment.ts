@@ -3,8 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyDZfcXkDe5yR0bcaKtcSiok9KyI9SSN7VY",
+    authDomain: "in-n-cut.firebaseapp.com",
+    databaseURL: "https://in-n-cut-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "in-n-cut",
+    storageBucket: "in-n-cut.appspot.com",
+    messagingSenderId: "726969518573",
+    appId: "1:726969518573:web:ea608edfff1ce67acd7fe4",
+    measurementId: "G-J1XMFLX7J0"
+  }
+}
 
 /*
  * In development mode, for easier debugging, you can ignore zone related error

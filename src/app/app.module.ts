@@ -4,10 +4,12 @@ import {RouterModule,Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { FormsModule } from '@angular/forms';
+
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerService } from './shared/customer.service';
 
 
 const appRoutes: Routes=[
@@ -33,14 +35,15 @@ const appRoutes: Routes=[
     AboutComponent,
     ScheduleComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,12 +1,7 @@
-html,
-body {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
+hr {
+  width: 80%;
+  align-items: center;
 }
-
 .ppp {
   padding-right: 4rem;
 }
@@ -18,4 +13,45 @@ body {
 }
 #more-text {
   width: 60%;
+}
+
+.features-box {
+  text-align: center;
+  padding: 5%;
+}
+
+/* testimonials*/
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #101010;
+  color: white;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+#press {
+  background-color: #101010;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.images-press {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+.pricing-column {
+  padding: 3% 2%;
 }
